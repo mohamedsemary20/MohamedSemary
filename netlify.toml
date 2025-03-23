@@ -1,13 +1,14 @@
 [build]
-  command = "dotnet publish -c Release"
-  publish = "Portfolio/bin/Release/net9.0/publish"
-  functions = "functions"
+  command = "dotnet publish ./Portfolio/Portfolio.csproj -c Release"
+  publish = "Portfolio/bin/Release/net9.0/publish/wwwroot"
 
 [build.environment]
   DOTNET_ROOT = "/usr/share/dotnet"
   DOTNET_VERSION = "9.0"
+  DOTNET_CLI_TELEMETRY_OPTOUT = "1"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
+  force = true 
