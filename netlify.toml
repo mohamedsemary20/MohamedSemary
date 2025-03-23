@@ -1,0 +1,13 @@
+[build]
+  command = "dotnet publish -c Release"
+  publish = "Portfolio/bin/Release/net9.0/publish"
+  functions = "functions"
+
+[build.environment]
+  DOTNET_ROOT = "/usr/share/dotnet"
+  DOTNET_VERSION = "9.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
