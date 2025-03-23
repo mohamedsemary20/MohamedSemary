@@ -1,0 +1,74 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center mb-5">تواصل معي</h2>
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-md-4 text-center">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <h5>البريد الإلكتروني</h5>
+                                <p class="text-secondary">mohamed.semary@example.com</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                </div>
+                                <h5>الموقع</h5>
+                                <p class="text-secondary">القاهرة، مصر</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-phone fa-2x text-primary"></i>
+                                </div>
+                                <h5>الهاتف</h5>
+                                <p class="text-secondary">+20 123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="social-links text-center mb-4">
+                            <a href="https://github.com/mohamedsemary20" target="_blank" class="btn btn-outline-primary me-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/mohamedsemary" target="_blank" class="btn btn-outline-primary me-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://twitter.com/mohamedsemary" target="_blank" class="btn btn-outline-primary">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">الموضوع</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">الرسالة</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
